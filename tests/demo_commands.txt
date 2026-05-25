@@ -1,0 +1,22 @@
+format
+login 2118 abcd
+dir
+mkdir docs
+cd docs
+pwd
+create a.txt 777
+open a.txt w
+write 0 hello_operating_system
+close 0
+open a.txt r
+read 0 100
+close 0
+append a.txt _course_design
+cat a.txt
+stat a.txt
+cp a.txt b.txt
+dir
+rm b.txt
+fsinfo
+logout
+exit

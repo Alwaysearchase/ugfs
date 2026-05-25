@@ -1,0 +1,8 @@
+build/
+ugfs
+ugfs.exe
+filesystem.dat
+*.obj
+*.o
+*.ilk
+*.pdb

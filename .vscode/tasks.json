@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build with gcc",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "-std=c99",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "-Iinclude",
+        "src/main.c",
+        "src/ugfs.c",
+        "-o",
+        "ugfs.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "run",
+      "type": "shell",
+      "command": ".\\ugfs.exe",
+      "dependsOn": "build with gcc",
+      "problemMatcher": []
+    }
+  ]
+}
