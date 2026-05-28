@@ -8,7 +8,16 @@ set(CMAKE_C_EXTENSIONS OFF)
 
 add_executable(ugfs
     src/main.c
-    src/ugfs.c
+    src/runtime.c
+    src/disk.c
+    src/inode.c
+    src/alloc.c
+    src/directory.c
+    src/users.c
+    src/format.c
+    src/commands.c
+    src/file_ops.c
+    src/shell.c
 )
 
 target_include_directories(ugfs PRIVATE include)
